@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>weather app</title>
+    <style>
+       
+        h1{
+            text-align: center;
+            color: rgb(9, 63, 97);
+            font-size: 40px;
+        }
+        div.search-box{
+            text-align: center;
+            margin-top: 50px;
+            font-size: 20px;
+           
+        }
+        input{
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            width: 300px;
+        }
+        button{
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+            background-color: #fff;
+            color: #58acdd;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        
+            body{
+                background-color: #58acdd;
+    background-image: url("weather.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+img{
+    text-align: center;
+     margin: 20px auto;
+            border-radius: 50%;
+  
+    display: block;
+    
+}
+.weather-card{
+    text-align: center;
+    color:  rgb(9, 63, 97);
+    font-size: 20px;
+    margin-top: 50px;
+}
+.weather-info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    color:  rgb(9, 63, 97);
+   
+}
+.weather-card h1{
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+.weather-card h2{
+    font-size: 30px;
+}
+
+.weather-card p{
+    font-size: 20px;
+}
+.weather-card{
+    width: 350px;
+    margin: 30px auto;
+    padding: 25px;
+    transition: 0.3s;
+
+    background: rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(10px);
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    color: rgb(9, 63, 97);
+
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+.weather-card:hover{
+    transform: scale(1.05);
+}
+.weather-info{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.weather-info h3{
+    margin: 0;
+}
+
+.weather-info p{
+    margin: 5px;
+}
+        
+    </style>
+</head>
+<body>
+   <h1>Weather App</h1>
+   
+   <div class="search-box">
+    <input type="text" 
+    id="city" 
+    placeholder="Enter city name">
+    <button id="searchBtn">Search</button>
+    
+   </div>
+   
+    <img src="cloud.png" alt="logo" width="200">
+   
+  
+   <div class="weather-card">
+    <h2>New Delhi</h2>
+    <h1>18°C</h1>
+    <p>Cloudy</p>
+
+    <div class="weather-info">
+        <div>
+            <h3>Humidity</h3>
+            <p id="humidity">--</p>
+        </div>
+
+        <div>
+            <h3>Wind</h3>
+            <p id="wind">--</p>
+        </div>
+    </div>
+</div>
+
+   
+
+   
+
+<script src="script.js"></script>
+</body>
+</html>
